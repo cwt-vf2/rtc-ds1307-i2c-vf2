@@ -1,1 +1,1 @@
-KERNEL=="rtc1", SUBSYSTEM=="rtc", DRIVER=="", ATTR{name}=="rtc-ds1307 0-0068", SYMLINK="rtc", OPTIONS+="link_priority=0", MODE="0600"
+KERNEL=="rtc1", SUBSYSTEM=="rtc", DRIVER=="", ATTR{name}=="rtc-ds1307*", SYMLINK="rtc", OPTIONS+="link_priority=0", MODE="0600"
