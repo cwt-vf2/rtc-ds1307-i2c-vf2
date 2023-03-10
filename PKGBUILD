@@ -1,7 +1,7 @@
 # Maintainer: Chaiwat Suttipongsakul <cwt@bashell.com>
 pkgname=visionfive2-i2c-rtc-ds1307
 pkgver=0.1
-pkgrel=2
+pkgrel=3
 pkgdesc="VisionFive2 Clock on I2C RTC-DS1307"
 arch=('any')
 url="https://github.com/cwt/visionfive2-i2c-rtc-ds1307"
