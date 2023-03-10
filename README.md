@@ -3,7 +3,7 @@ This is a package to read clock from an external RTC DS1307 via I2C bus.
 
 There are two systemd units in the package
 1. `rtc-ds1307-boot.service` this unit run at `sysinit.target` to make sure the system clock is loaded from the RTC earlier than other services.
-2. `rtc-ds1307-shutdown.service` this unit run before shutdown or reboot to update the to most recent system clock before shutdown or reboot.
+2. `rtc-ds1307-shutdown.service` this unit run before shutdown or reboot to update the RTC to most recent system clock before shutdown or reboot.
 
 Both units execute a script `rtc-ds1307.sh` with **boot** or **shutdown** parameters.
 
