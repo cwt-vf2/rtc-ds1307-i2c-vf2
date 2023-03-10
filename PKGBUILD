@@ -1,7 +1,7 @@
 # Maintainer: Chaiwat Suttipongsakul <cwt@bashell.com>
 pkgname=visionfive2-i2c-rtc-ds1307
 pkgver=0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="VisionFive2 Clock on I2C RTC-DS1307"
 arch=('any')
 url="https://github.com/cwt/visionfive2-i2c-rtc-ds1307"
@@ -23,6 +23,6 @@ package() {
 	install -Dm644 rtc-ds1307-shutdown.service "${pkgdir}/usr/local/lib/systemd/system/rtc-ds1307-shutdown.service"
 	install -Dm755 rtc-ds1307.sh "${pkgdir}/usr/local/sbin/rtc-ds1307.sh"
 	install -Dm644 rtc-ds1307.conf "${pkgdir}/etc/rtc-ds1307.conf"
-	install -Dm644 rtc-ds1307.rules "${pkgdir}/etc/udev/rules/99-rtc-ds1307.rules"
+	install -Dm644 rtc-ds1307.rules "${pkgdir}/etc/udev/rules.d/99-rtc-ds1307.rules"
 }
 
