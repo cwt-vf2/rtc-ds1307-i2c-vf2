@@ -16,7 +16,7 @@ sha256sums=('bf1135f198daf87470a69d348ff8489575d742405610b87bc82fad4a14405dd3'
             '54142f693c0382f41bea096f5e3694438c5f912797a29530346e8e4c9f6f61df'
             '980da77ede2488fd897ba59bd8a3812827ef7a5bf307cec22d856a3d8101a54d'
             '90d172c32fe3202b0669bf59a1e3ad48e9dfac19e85f37e8fe7df94fb1fce45e'
-            '2cd5958837b82d32a88aab07114c2c28c5cf32a2838b0327bf7ae4cb7428260b')
+            '4e2cf5776429969a8afbab7ad60153e86cdc11fff4cf65b8528ccc88622d796a')
 
 package() {
 	install -Dm644 rtc-ds1307-boot.service "${pkgdir}/usr/local/lib/systemd/system/rtc-ds1307-boot.service"
