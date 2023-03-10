@@ -1,0 +1,13 @@
+[Unit]
+Description=Sync system time to external RTC DS1307
+DefaultDependencies=no
+Before=shutdown.target reboot.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/rtc-ds1307.sh shutdown
+TimeoutStartSec=0
+
+[Install]
+WantedBy=shutdown.target reboot.target
+

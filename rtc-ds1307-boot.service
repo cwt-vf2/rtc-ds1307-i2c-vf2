@@ -1,0 +1,11 @@
+[Unit]
+Description=Sync time using external RTC DS1307
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/rtc-ds1307.sh boot
+TimeoutSec=0
+
+[Install]
+WantedBy=sysinit.target
+
