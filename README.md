@@ -21,6 +21,8 @@ makepkg -s
 ##  Installing
 ```bash
 sudo pacman -U visionfive2-i2c-rtc-ds1307-[version-release]-any.pkg.tar.zst
+sudo systemctl enable rtc-ds1307-boot.service
+sudo systemctl enable rtc-ds1307-shutdown.service
 ```
 
 ##  License
