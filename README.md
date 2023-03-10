@@ -12,3 +12,16 @@ With **boot** parameter, the script will load module `rtc_ds1307` first, and the
 With **shutdown** parameter, the script will set the external RTC clock with the current system clock.
 
 The provided udev-rules file will make `/dev/rtc` linked to `/dev/rtc1` instead of `/dev/rtc0`.
+
+##  Building
+```bash
+makepkg -s
+```
+
+##  Installing
+```bash
+sudo pacman -U visionfive2-i2c-rtc-ds1307-[version-release]-any.pkg.tar.zst
+```
+
+##  License
+This package is under [MIT License](LICENSE).
