@@ -1,1 +1,0 @@
-KERNEL=="rtc1", SUBSYSTEM=="rtc", DRIVER=="", ATTR{name}=="rtc-ds1307*", SYMLINK="rtc", OPTIONS+="link_priority=0", MODE="0600"
