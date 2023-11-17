@@ -11,8 +11,6 @@ With **boot** parameter, the script will load module `rtc_ds1307` first, and the
 
 With **shutdown** parameter, the script will set the external RTC clock with the current system clock.
 
-The provided udev-rules file will make `/dev/rtc` linked to `/dev/rtc1` instead of `/dev/rtc0`.
-
 ##  Building
 ```bash
 makepkg -s
